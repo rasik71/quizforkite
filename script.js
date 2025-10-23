@@ -26,7 +26,7 @@ const questions = [
   {
     question: "Which blockchain framework is Kite AI built on, and is it EVM compatible?",
     answers: ["Ethereum", "Solana", "Avalanche", "Polkadot"],
-    correct: 3
+    correct: 2
   },
   {
     question: "What is the utility of the KITE token within the ecosystem?",
@@ -124,4 +124,5 @@ function endQuiz() {
   resultDiv.classList.remove("hidden");
   resultDiv.innerHTML = `<h2>Your Score: ${score}/${questions.length}</h2><p>Thanks for playing!</p>`;
 }
+
 
