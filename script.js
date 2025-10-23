@@ -15,7 +15,12 @@ let timer;
 const questions = [
   {
     question: "What is the primary focus of the Kite AI?",
-    answers: ["Decentralized finance for gaming", "A Layer 1 blockchain for the AI economy,enabling autonomous AI agents", "A social media platform integrated with crypto", "NFT marketplace for digital art"],
+    answers: [
+      "Decentralized finance for gaming",
+      "A Layer 1 blockchain for the AI economy,enabling autonomous AI agents",
+      "A social media platform integrated with crypto",
+      "NFT marketplace for digital art"
+    ],
     correct: 1
   },
   {
@@ -25,18 +30,33 @@ const questions = [
   },
   {
     question: "What is the utility of the KITE token within the ecosystem?",
-    answers: ["Only for trading on exchanges", "Governance, staking, paying for AI transactions, and rewarding contributors", "Solely for NFT minting", "As a stablecoin for payments"],
-    correct: 2
+    answers: [
+      "Only for trading on exchanges",
+      "Governance, staking, paying for AI transactions, and rewarding contributors",
+      "Solely for NFT minting",
+      "As a stablecoin for payments"
+    ],
+    correct: 1
   },
   {
     question: "What major milestone did Kite AI achieve in September 2025?",
-    answers: ["Mainnet launch", "Token airdrop to all users", "Partnership with Ethereum Foundation", "Raised $18M in Series A funding"],
-    correct: 4
+    answers: [
+      "Mainnet launch",
+      "Token airdrop to all users",
+      "Partnership with Ethereum Foundation",
+      "Raised $18M in Series A funding"
+    ],
+    correct: 3
   },
   {
     question: "Who are two key founders of Kite AI?",
-    answers: ["Vitalik Buterin and Changpeng Zhao", "Scott Shi and Chi Zhang", "Elon Musk and Sam Altman", "Anatoly Yakovenko and Raj Gokal"],
-    correct: 2
+    answers: [
+      "Vitalik Buterin and Changpeng Zhao",
+      "Scott Shi and Chi Zhang",
+      "Elon Musk and Sam Altman",
+      "Anatoly Yakovenko and Raj Gokal"
+    ],
+    correct: 1
   }
 ];
 
@@ -104,3 +124,4 @@ function endQuiz() {
   resultDiv.classList.remove("hidden");
   resultDiv.innerHTML = `<h2>Your Score: ${score}/${questions.length}</h2><p>Thanks for playing!</p>`;
 }
+
